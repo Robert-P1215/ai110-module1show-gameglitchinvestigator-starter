@@ -12,6 +12,10 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 Document at least 3 bugs you found. Add rows as needed.
 
+-Entering guesses would cause the opposite hint to be given to the user. (higher would prompt lower and vice versa)
+-The new game button does not refresh hints and does not correctly restart the game.
+-The counter for guesses is incorrect, being behind by 1 in all modes.
+
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
 | | | | |test               |                 |                        |
