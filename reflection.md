@@ -7,20 +7,23 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+-Entering guesses would cause the opposite hint to be given to the user. (higher would prompt lower and vice versa)
+-The new game button does not refresh hints and does not correctly restart the game.
+-When swapping modes, the secret number does not update automatically to the new criteria.
+-On even attempts, the game would act strangely at times
 
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
--Entering guesses would cause the opposite hint to be given to the user. (higher would prompt lower and vice versa)
--The new game button does not refresh hints and does not correctly restart the game.
--The counter for guesses is incorrect, being behind by 1 in all modes.
+
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |test               |                 |                        |
-| | | | |wow
-| | | | |cool
+guess 10 (secret is 5)| hint given is too high| hint given is too low| None
+pressing new game after ending| level restarts, messages cleared, states reset| game is stuck and would not restart|Game over. Start a new game to try again.
+swapped to a different difficulty| new secret number is generated within the new criteria| old secret number retained, did not update| None
+on even attempts, correct guess is input| game ends with victory| sometimes, the guess is marked wrong| None
 
 ---
 
