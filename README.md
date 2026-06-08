@@ -25,19 +25,19 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose.
+- [x] Detail which bugs you found.
+- [x] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Game starts with correct number of guesses, and difficulty on left, automatically resetting game to conform to rules of selected difficulty.
+2. Players can guess number between specified ranges and the game will say higher or lower.
+3. Players can restart game whenever they want as many times as needed.
+4. Players will correctly be given hints can can guess the correct number to win, otherwise they lose with guesses being marked right and wrong correctly.
+5. Game can reset upon victory/loss as needed.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
