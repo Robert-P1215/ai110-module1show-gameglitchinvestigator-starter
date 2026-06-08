@@ -53,6 +53,7 @@ on even attempts, correct guess is input| game ends with victory| sometimes, the
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+  - Streamlit reruns essentially act like a mini refresh button for the app to update any new values saved in the session state, which is kind of like a special memory, like sticky notes where important information about stuff is saved.
 
 ---
 
@@ -60,5 +61,8 @@ on even attempts, correct guess is input| game ends with victory| sometimes, the
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+    - Using AI as a test created is very useful rather thanb designing each pytest case manually.
 - What is one thing you would do differently next time you work with AI on a coding task?
+  - I would try to have Ai help me test each bug one by one instead of all at once at the end in case there are multiple incorrect solutions.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+  - This project shows me that while Ai generated code can work quite well at times, it can be riddled with many misc. issues and logical errors which do not make sense.
