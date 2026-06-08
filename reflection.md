@@ -30,17 +30,23 @@ on even attempts, correct guess is input| game ends with victory| sometimes, the
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+  - Used Claude code and ChatGPT with Gemini on mobile
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+  - ChatGPT suggested that the logic of the return statements could potentially be correct, but have their messages swapped due to logical mistake. I located the relevant code and found that it was indeed as ChatGPT theorized and made the necessary switch. 
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+  - Gemini suggested that the difficulty tracker had already been made and that the logic error was actually within the start game button. While the start game button did have an error, Gemini was incorrect in its assumption that the difficulty was being stracked in a session state.
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+  - A bug was fixed once the pytest case was a succes and i had manually attempted to recreate the bug in the updated game.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+  - One of the manual tests i did was to keep trying guesses that were either too high and too low to see what the pattern of the issue was, and then reattempting once the code had been swapped.
 - Did AI help you design or understand any tests? How?
+  - Ai helped me design many of the pytest cases and created another file called conftest.py which resolved an import statement error with the pytest file.
 
 ---
 
